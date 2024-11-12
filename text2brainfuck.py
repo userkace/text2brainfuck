@@ -13,6 +13,9 @@ def main():
     Main entry point of the script.
     """
     parser = argparse.ArgumentParser(description='Text to Brainfuck generator.')
+    """
+    Change default to String you want to be converted
+    """
     parser.add_argument('--input_string', metavar='S', default="userkace", help='Input string to be converted to Brainfuck code.')
     parser.add_argument('--output_file', metavar='O', help='Output file. If not specified, the output will be sent to the console.')
 
