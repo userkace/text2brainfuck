@@ -70,35 +70,6 @@ The script generates commented output by default (character after each line). To
 - `delta_to_brainfuck(delta)`: Converts character differences using optimized loops
 - `string_to_brainfuck(string, commented)`: Main conversion function with optional comments
 
-## Example Output
-
-### Input: "Hi"
-
-```brainfuck
-[-]>[-]<++++++++++[>++++++++++<-]++++++++++.< H
-+++++++[>----------<-]-----.< i
-```
-
-### Uncommented Version
-
-```brainfuck
-[-]>[-]<++++++++++[>++++++++++<-]++++++++++.<+++++++[>----------<-]-----.<
-```
-
-## Brainfuck Interpreter
-
-To test the generated code, you can use any Brainfuck interpreter:
-
-```bash
-# Online interpreters:
-# - https://sange.fi/esoteric/brainfuck/impl/interp/i.html
-# - https://copy.sh/brainfuck/
-
-# Local interpreters:
-npm install -g brainfuck-sh
-brainfuck-sh hello.bf
-```
-
 ## Technical Details
 
 - **Memory Management**: Uses two cells for efficient character generation
@@ -109,10 +80,6 @@ brainfuck-sh hello.bf
 ## Contributing
 
 Feel free to submit issues and enhancement requests!
-
-## License
-
-This project is open source and available under the MIT License.
 
 ---
 
